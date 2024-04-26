@@ -13,6 +13,6 @@ export default class HolbertonClass {
     if (hint === 'number') {
       return this._size;
     }
-    return thisi;
+    return this;
   }
 }
