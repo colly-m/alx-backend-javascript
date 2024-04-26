@@ -7,18 +7,6 @@ export default class Car {
 
   cloneCar() {
     const { _brand, _motor, _color } = this;
-    return new Car(_brand, _motor, _color);
-  }
-
-  get brand() {
-    return this._brand;
-  }
-
-  get motor() {
-    return this._motor;
-  }
-
-  get color() {
-    return this._color;
+    return new this.constructor(_brand, _motor, _color);
   }
 }
