@@ -34,6 +34,9 @@ const countStudents = (dbPath) => new Promise((resolve, reject) => {
   });
 });
 
+const hostname = 'localhost';
+const port = 1245
+
 const app = http.createServer(async (req, res) => {
   if (req.url === '/') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
@@ -54,8 +57,6 @@ const app = http.createServer(async (req, res) => {
   }
 });
 
-app.listen(1245, () => {
-  console.log('Server is listening on port 1245');
-});
+app.listen(port, hostname);
 
 module.exports = app;
