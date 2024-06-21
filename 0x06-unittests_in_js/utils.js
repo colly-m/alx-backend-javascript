@@ -14,5 +14,8 @@ const Utils = {
         }
         return roundedA / roundedB;
     }
-  }
+    return 0;
+  },
 };
+
+module.exports = Utils;
