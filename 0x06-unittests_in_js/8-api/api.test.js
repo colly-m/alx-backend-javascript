@@ -6,7 +6,7 @@ const app = require('./api');
 const { expect } = chai;
 chai.use(chaiHttp);
 
-describe('Index page', () => {
+describe('Integrate Tester', () => {
   it('should return correct status code', (done) => {
     chai.request(app)
       .get('/')
